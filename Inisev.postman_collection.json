@@ -1,0 +1,101 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Inisev",
+		"_postman_id": "97242578-aa2c-6eac-7c29-f7b59eaa2059",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/subscribe/create",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/subscribe/create",
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-XSRF-TOKEN",
+						"value": "pBec1ZakImBJlSB7vZfXUmDmTGg4AJ38AmK47pHt",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "subscriber_name",
+							"value": "ABK",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "abk@test.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "address.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "website_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/post/create",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/post/create",
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-XSRF-TOKEN",
+						"value": "pBec1ZakImBJlSB7vZfXUmDmTGg4AJ38AmK47pHt",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "post_title",
+							"value": "Hello World fefefefefdfdfdfefefefdsfsdffdfsdf",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "Corporate author",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "This the first post!",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "website_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
