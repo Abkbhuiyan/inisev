@@ -29,6 +29,6 @@ class PostMail extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.post_mail')->with($this->post);
+        return $this->view('emails.post_mail',['post'=>$this->post]);
     }
 }
